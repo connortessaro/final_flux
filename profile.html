@@ -3,28 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Profile</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="top-bar">
         <a href="/">
-            <h1>My Forum</h1>
+            <h1>Flux</h1>
         </a>
         <div class="top-bar-info">
-            <a href="/profile">
-                <h4>Profile</h4>
+            <a href="profile.html">
+                <h4 class="top-bar-profile">Profile</h4>
             </a>
-            <a href="/create.html">
-                <h4>Create New Thread</h4>
+            <a href="create.html">
+                <h4 class="top-bar-thread">Create</h4>
             </a>
         </div>
     </div>
 
     <div class="profile-main">
         <img src="./lillia.webp" alt="Profile Picture" class="profile-picture">
-        <h4 class="profile-username">username</h4>
-        <p class="profile-bio">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi temporibus harum impedit eum qui necessitatibus eius maxime voluptate numquam dolores? Dolorem et cum minus! Vero blanditiis porro sed architecto nesciunt!</p>
+        <h4 class="profile-username" contenteditable="false"></h4>
+        <p class="profile-bio" contenteditable="false"></p>
+        <button class="btn-edit">Edit Info</button>
+        <button class="btn-save" style="display:none;">Save Info</button>
     </div>
+    <script src="data.js"></script>
+    <script src="profile.js"></script>
 </body>
 </html>
