@@ -22,7 +22,7 @@ function addComment(comment) {
             <div class="comment">
             <div class="top-comment">
             <p class="user">
-                ${comment.author}
+                ${comment.author} 
             </p>
             <p class="comment-ts">
                 ${new Date(comment.date).toLocaleString()}
@@ -50,8 +50,12 @@ btn.addEventListener('click', function() {
         date: Date.now(),
         author: 'Aaron',
     }
-    addComment(comment)
-    txt.value = '';
-    thread.comments.push(comment);
-    localStorage.setItem('threads', JSON.stringify(threads))
+    if(!txt.value) {
+        alert("Please fill out the content field.")
+    } else {
+        addComment(comment)
+        txt.value = '';
+        thread.comments.push(comment);
+        localStorage.setItem('threads', JSON.stringify(threads))
+    }
 })

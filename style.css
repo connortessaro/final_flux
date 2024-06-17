@@ -26,8 +26,16 @@ button {
 }
 
 .top-bar {
+    display: flex;
     background-color: skyblue;
     padding: 0 40px;
+}
+
+.top-bar-info {
+    display: flex;
+    margin-left: auto;
+    margin-top: auto;
+    gap: 10px;
 }
 
 .main {
@@ -59,4 +67,29 @@ button {
 
 .comment-ts {
     padding-right: 10px;
+}
+
+.user {
+    margin-right: 5px;
+}
+
+.thread-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 40px;
+}
+
+.profile-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.profile-picture {
+        display: inline-block;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
 }

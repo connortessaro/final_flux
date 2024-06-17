@@ -1,4 +1,4 @@
-var threads = [
+var defaultThreads = [
     {
         id: 1,
         title: "Thread 1",
@@ -37,7 +37,7 @@ var threads = [
             }
         ]
     }
-]
+];
 
 var threads;
 if (localStorage && localStorage.getItem('threads')) {
